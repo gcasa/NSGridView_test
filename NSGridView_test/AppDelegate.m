@@ -20,6 +20,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
     // NSMutableArray *array = [NSMutableArray arrayWithCapacity: 32];
+    /*
     NSUInteger i = 0;
     for (i = 0; i < 32; i++)
     {
@@ -35,7 +36,7 @@
         [v addSubview: tv];
         
         [self.gridView addSubview: v];
-    }
+    }*/
 }
 
 
