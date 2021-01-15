@@ -37,6 +37,8 @@
         
         [self.gridView addSubview: v];
     }*/
+    
+    NSLog(@"NSGridView has %ld subviews.", [[self.gridView subviews] count]);
 }
 
 

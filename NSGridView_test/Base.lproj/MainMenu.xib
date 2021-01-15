@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.2"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -685,13 +686,13 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2048" height="1129"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2048" height="1127"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <gridView fixedFrame="YES" xPlacement="leading" yPlacement="bottom" rowAlignment="none" rowSpacing="9" columnSpacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Tgw-OT-GC0">
-                        <rect key="frame" x="64" y="36" width="384" height="295"/>
+                        <rect key="frame" x="64" y="36" width="390" height="295"/>
                         <rows>
                             <gridRow id="9UA-tR-zaH"/>
                             <gridRow id="Jae-yD-qRv"/>
@@ -711,7 +712,7 @@
                         <gridCells>
                             <gridCell row="9UA-tR-zaH" column="w3L-5Q-oX9" id="3rk-mC-87V">
                                 <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vNE-PP-ztS">
-                                    <rect key="frame" x="-6" y="258" width="81" height="32"/>
+                                    <rect key="frame" x="-7" y="258" width="76" height="32"/>
                                     <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="x2h-a3-siz">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -720,7 +721,7 @@
                             </gridCell>
                             <gridCell row="9UA-tR-zaH" column="ZcS-3c-2ta" id="KTc-UB-IxW">
                                 <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="b1J-kF-yJ4">
-                                    <rect key="frame" x="107" y="263" width="61" height="18"/>
+                                    <rect key="frame" x="107" y="264" width="65" height="18"/>
                                     <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="kjN-CN-x2M">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -729,7 +730,7 @@
                             </gridCell>
                             <gridCell row="9UA-tR-zaH" column="6Bq-zO-hhD" id="NG4-NL-jGR">
                                 <textField key="contentView" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f0G-Jm-oVW">
-                                    <rect key="frame" x="175" y="265" width="100" height="21"/>
+                                    <rect key="frame" x="181" y="265" width="100" height="21"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="9zp-pa-tVI">
                                         <font key="font" usesAppearanceFont="YES"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -739,30 +740,30 @@
                             </gridCell>
                             <gridCell row="9UA-tR-zaH" column="Vpg-JV-dcM" id="ofw-sv-hSc">
                                 <colorWell key="contentView" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eMT-p3-haH">
-                                    <rect key="frame" x="284" y="265" width="100" height="30"/>
+                                    <rect key="frame" x="290" y="265" width="100" height="30"/>
                                     <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </colorWell>
                             </gridCell>
                             <gridCell row="Jae-yD-qRv" column="w3L-5Q-oX9" id="E9w-LH-w7e">
                                 <stepper key="contentView" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JGA-5l-lz3">
-                                    <rect key="frame" x="-3" y="231" width="19" height="28"/>
+                                    <rect key="frame" x="-3" y="230" width="19" height="28"/>
                                     <stepperCell key="cell" continuous="YES" alignment="left" maxValue="100" id="MRv-bm-AgE"/>
                                 </stepper>
                             </gridCell>
                             <gridCell row="Jae-yD-qRv" column="ZcS-3c-2ta" id="AeX-OH-gtk">
                                 <switch key="contentView" horizontalHuggingPriority="750" verticalHuggingPriority="750" baseWritingDirection="leftToRight" alignment="left" translatesAutoresizingMaskIntoConstraints="NO" id="mK6-sS-Nyv">
-                                    <rect key="frame" x="107" y="232" width="42" height="24"/>
+                                    <rect key="frame" x="107" y="232" width="42" height="25"/>
                                 </switch>
                             </gridCell>
                             <gridCell row="Jae-yD-qRv" column="6Bq-zO-hhD" id="wiO-78-4c6">
                                 <levelIndicator key="contentView" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VGG-SD-oIs">
-                                    <rect key="frame" x="175" y="232" width="100" height="18"/>
+                                    <rect key="frame" x="181" y="232" width="100" height="18"/>
                                     <levelIndicatorCell key="cell" alignment="left" doubleValue="2" maxValue="2" warningValue="2" criticalValue="2" id="Ap4-fF-RHY"/>
                                 </levelIndicator>
                             </gridCell>
                             <gridCell row="Jae-yD-qRv" column="Vpg-JV-dcM" id="HTQ-f7-egi">
                                 <slider key="contentView" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QWf-6b-mxM">
-                                    <rect key="frame" x="282" y="232" width="104" height="19"/>
+                                    <rect key="frame" x="288" y="228" width="104" height="28"/>
                                     <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="AwA-CZ-gda"/>
                                 </slider>
                             </gridCell>
@@ -772,7 +773,7 @@
                                     <subviews>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lTS-J6-9GT">
                                             <rect key="frame" x="20" y="6" width="61" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                             <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="WuK-rC-dor">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
@@ -783,7 +784,7 @@
                             </gridCell>
                             <gridCell row="y83-J7-Ezk" column="ZcS-3c-2ta" id="qOx-NA-aCC">
                                 <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JVk-6q-22J">
-                                    <rect key="frame" x="108" y="194" width="57" height="18"/>
+                                    <rect key="frame" x="107" y="194" width="61" height="18"/>
                                     <buttonCell key="cell" type="radio" title="Radio" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Dri-z6-2eW">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
