@@ -792,7 +792,22 @@
                                 </button>
                             </gridCell>
                             <gridCell row="y83-J7-Ezk" column="6Bq-zO-hhD" id="liu-4D-Qba"/>
-                            <gridCell row="y83-J7-Ezk" column="Vpg-JV-dcM" id="F6y-1T-mvG"/>
+                            <gridCell row="y83-J7-Ezk" column="Vpg-JV-dcM" id="F6y-1T-mvG">
+                                <popUpButton key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vDc-UC-Hep">
+                                    <rect key="frame" x="287" y="191" width="78" height="25"/>
+                                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="VZl-Ig-lx9" id="iJN-W7-eWy">
+                                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="menu"/>
+                                        <menu key="menu" id="JvP-gT-uQo">
+                                            <items>
+                                                <menuItem title="Item 1" state="on" id="VZl-Ig-lx9"/>
+                                                <menuItem title="Item 2" id="Qog-cF-2Z0"/>
+                                                <menuItem title="Item 3" id="bZ9-WK-liT"/>
+                                            </items>
+                                        </menu>
+                                    </popUpButtonCell>
+                                </popUpButton>
+                            </gridCell>
                             <gridCell row="g6x-OW-gwd" column="w3L-5Q-oX9" id="ubi-Kd-88l"/>
                             <gridCell row="g6x-OW-gwd" column="ZcS-3c-2ta" id="R2N-oJ-9bE"/>
                             <gridCell row="g6x-OW-gwd" column="6Bq-zO-hhD" id="fUW-zM-WZN"/>

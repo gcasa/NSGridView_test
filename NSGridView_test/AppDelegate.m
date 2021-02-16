@@ -37,7 +37,10 @@
         
         [self.gridView addSubview: v];
     }*/
-    
+    NSRect f = NSMakeRect(0, 0,500, 400);
+    NSView *v = [[NSButton alloc] initWithFrame: f];
+    NSArray *a = [NSArray arrayWithObject:v];
+    [self.gridView insertRowAtIndex:1 withViews:a];
     NSLog(@"NSGridView has %ld subviews.", [[self.gridView subviews] count]);
 }
 
