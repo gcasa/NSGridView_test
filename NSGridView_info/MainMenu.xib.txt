@@ -15,18 +15,17 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
-                <outlet property="gridView" destination="Tgw-OT-GC0" id="yZv-r9-Yx2"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="NSGridView_test" id="1Xt-HY-uBw">
+                <menuItem title="NSStackView_test" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="NSGridView_test" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="NSStackView_test" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
-                            <menuItem title="About NSGridView_test" id="5kV-Vb-QxS">
+                            <menuItem title="About NSStackView_test" id="5kV-Vb-QxS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
@@ -40,7 +39,7 @@
                                 <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                            <menuItem title="Hide NSGridView_test" keyEquivalent="h" id="Olw-nP-bQN">
+                            <menuItem title="Hide NSStackView_test" keyEquivalent="h" id="Olw-nP-bQN">
                                 <connections>
                                     <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
                                 </connections>
@@ -58,7 +57,7 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                            <menuItem title="Quit NSGridView_test" keyEquivalent="q" id="4sb-4s-VLi">
+                            <menuItem title="Quit NSStackView_test" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
                                 </connections>
@@ -671,7 +670,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                         <items>
-                            <menuItem title="NSGridView_test Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                            <menuItem title="NSStackView_test Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
                                 </connections>
@@ -682,157 +681,79 @@
             </items>
             <point key="canvasLocation" x="133" y="154"/>
         </menu>
-        <window title="NSGridView_test" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="NSStackView_test" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2048" height="1127"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
-                <autoresizingMask key="autoresizingMask"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <gridView fixedFrame="YES" xPlacement="leading" yPlacement="bottom" rowAlignment="none" rowSpacing="9" columnSpacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Tgw-OT-GC0">
-                        <rect key="frame" x="64" y="36" width="390" height="295"/>
-                        <rows>
-                            <gridRow id="9UA-tR-zaH"/>
-                            <gridRow id="Jae-yD-qRv"/>
-                            <gridRow id="y83-J7-Ezk"/>
-                            <gridRow id="g6x-OW-gwd"/>
-                            <gridRow id="BkG-Mr-KJu"/>
-                            <gridRow id="Cfm-yY-Qux"/>
-                            <gridRow id="NDz-FB-Dwb"/>
-                            <gridRow id="cXq-XL-Fsv"/>
-                        </rows>
-                        <columns>
-                            <gridColumn id="w3L-5Q-oX9"/>
-                            <gridColumn id="ZcS-3c-2ta"/>
-                            <gridColumn id="6Bq-zO-hhD"/>
-                            <gridColumn id="Vpg-JV-dcM"/>
-                        </columns>
-                        <gridCells>
-                            <gridCell row="9UA-tR-zaH" column="w3L-5Q-oX9" id="3rk-mC-87V">
-                                <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vNE-PP-ztS">
-                                    <rect key="frame" x="-7" y="258" width="76" height="32"/>
-                                    <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="x2h-a3-siz">
-                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                        <font key="font" metaFont="system"/>
-                                    </buttonCell>
-                                </button>
-                            </gridCell>
-                            <gridCell row="9UA-tR-zaH" column="ZcS-3c-2ta" id="KTc-UB-IxW">
-                                <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="b1J-kF-yJ4">
-                                    <rect key="frame" x="107" y="264" width="65" height="18"/>
-                                    <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="kjN-CN-x2M">
-                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                        <font key="font" metaFont="system"/>
-                                    </buttonCell>
-                                </button>
-                            </gridCell>
-                            <gridCell row="9UA-tR-zaH" column="6Bq-zO-hhD" id="NG4-NL-jGR">
-                                <textField key="contentView" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f0G-Jm-oVW">
-                                    <rect key="frame" x="181" y="265" width="100" height="21"/>
-                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="9zp-pa-tVI">
-                                        <font key="font" usesAppearanceFont="YES"/>
-                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    </textFieldCell>
-                                </textField>
-                            </gridCell>
-                            <gridCell row="9UA-tR-zaH" column="Vpg-JV-dcM" id="ofw-sv-hSc">
-                                <colorWell key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="eMT-p3-haH">
-                                    <rect key="frame" x="290" y="265" width="100" height="30"/>
-                                    <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </colorWell>
-                            </gridCell>
-                            <gridCell row="Jae-yD-qRv" column="w3L-5Q-oX9" id="E9w-LH-w7e">
-                                <stepper key="contentView" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JGA-5l-lz3">
-                                    <rect key="frame" x="-3" y="230" width="19" height="28"/>
-                                    <stepperCell key="cell" continuous="YES" alignment="left" maxValue="100" id="MRv-bm-AgE"/>
-                                </stepper>
-                            </gridCell>
-                            <gridCell row="Jae-yD-qRv" column="ZcS-3c-2ta" id="AeX-OH-gtk">
-                                <switch key="contentView" horizontalHuggingPriority="750" verticalHuggingPriority="750" baseWritingDirection="leftToRight" alignment="left" translatesAutoresizingMaskIntoConstraints="NO" id="mK6-sS-Nyv">
-                                    <rect key="frame" x="107" y="232" width="42" height="25"/>
-                                </switch>
-                            </gridCell>
-                            <gridCell row="Jae-yD-qRv" column="6Bq-zO-hhD" id="wiO-78-4c6">
-                                <levelIndicator key="contentView" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VGG-SD-oIs">
-                                    <rect key="frame" x="181" y="232" width="100" height="18"/>
-                                    <levelIndicatorCell key="cell" alignment="left" doubleValue="2" maxValue="2" warningValue="2" criticalValue="2" id="Ap4-fF-RHY"/>
-                                </levelIndicator>
-                            </gridCell>
-                            <gridCell row="Jae-yD-qRv" column="Vpg-JV-dcM" id="HTQ-f7-egi">
-                                <slider key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QWf-6b-mxM">
-                                    <rect key="frame" x="288" y="228" width="104" height="28"/>
-                                    <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="AwA-CZ-gda"/>
-                                </slider>
-                            </gridCell>
-                            <gridCell row="y83-J7-Ezk" column="w3L-5Q-oX9" id="Vl2-M1-agV">
-                                <customView key="contentView" translatesAutoresizingMaskIntoConstraints="NO" id="9i6-pW-qnf">
-                                    <rect key="frame" x="0.0" y="195" width="100" height="30"/>
-                                    <subviews>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lTS-J6-9GT">
-                                            <rect key="frame" x="20" y="6" width="61" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
-                                            <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="WuK-rC-dor">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
-                                        </button>
-                                    </subviews>
-                                </customView>
-                            </gridCell>
-                            <gridCell row="y83-J7-Ezk" column="ZcS-3c-2ta" id="qOx-NA-aCC">
-                                <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JVk-6q-22J">
-                                    <rect key="frame" x="107" y="194" width="61" height="18"/>
-                                    <buttonCell key="cell" type="radio" title="Radio" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Dri-z6-2eW">
-                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                        <font key="font" metaFont="system"/>
-                                    </buttonCell>
-                                </button>
-                            </gridCell>
-                            <gridCell row="y83-J7-Ezk" column="6Bq-zO-hhD" id="liu-4D-Qba"/>
-                            <gridCell row="y83-J7-Ezk" column="Vpg-JV-dcM" id="F6y-1T-mvG">
-                                <popUpButton key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vDc-UC-Hep">
-                                    <rect key="frame" x="287" y="191" width="78" height="25"/>
-                                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="VZl-Ig-lx9" id="iJN-W7-eWy">
-                                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                        <font key="font" metaFont="menu"/>
-                                        <menu key="menu" id="JvP-gT-uQo">
-                                            <items>
-                                                <menuItem title="Item 1" state="on" id="VZl-Ig-lx9"/>
-                                                <menuItem title="Item 2" id="Qog-cF-2Z0"/>
-                                                <menuItem title="Item 3" id="bZ9-WK-liT"/>
-                                            </items>
-                                        </menu>
-                                    </popUpButtonCell>
-                                </popUpButton>
-                            </gridCell>
-                            <gridCell row="g6x-OW-gwd" column="w3L-5Q-oX9" id="ubi-Kd-88l"/>
-                            <gridCell row="g6x-OW-gwd" column="ZcS-3c-2ta" id="R2N-oJ-9bE"/>
-                            <gridCell row="g6x-OW-gwd" column="6Bq-zO-hhD" id="fUW-zM-WZN"/>
-                            <gridCell row="g6x-OW-gwd" column="Vpg-JV-dcM" id="rfy-gh-ed9"/>
-                            <gridCell row="BkG-Mr-KJu" column="w3L-5Q-oX9" id="jn1-Gy-Mhn"/>
-                            <gridCell row="BkG-Mr-KJu" column="ZcS-3c-2ta" id="WyO-PL-up3"/>
-                            <gridCell row="BkG-Mr-KJu" column="6Bq-zO-hhD" id="zA2-gm-FjN"/>
-                            <gridCell row="BkG-Mr-KJu" column="Vpg-JV-dcM" id="HN6-oe-HEO"/>
-                            <gridCell row="Cfm-yY-Qux" column="w3L-5Q-oX9" id="4BB-Tx-99h"/>
-                            <gridCell row="Cfm-yY-Qux" column="ZcS-3c-2ta" id="ugD-4b-Dqh"/>
-                            <gridCell row="Cfm-yY-Qux" column="6Bq-zO-hhD" id="XPx-Jb-70d"/>
-                            <gridCell row="Cfm-yY-Qux" column="Vpg-JV-dcM" id="919-cA-h46"/>
-                            <gridCell row="NDz-FB-Dwb" column="w3L-5Q-oX9" id="sMT-WB-C07"/>
-                            <gridCell row="NDz-FB-Dwb" column="ZcS-3c-2ta" id="dOV-Qu-EUa"/>
-                            <gridCell row="NDz-FB-Dwb" column="6Bq-zO-hhD" id="xKK-1a-XXL"/>
-                            <gridCell row="NDz-FB-Dwb" column="Vpg-JV-dcM" id="tFx-T7-cVb"/>
-                            <gridCell row="cXq-XL-Fsv" column="w3L-5Q-oX9" id="dta-KP-peI"/>
-                            <gridCell row="cXq-XL-Fsv" column="ZcS-3c-2ta" id="gMh-1O-S3B"/>
-                            <gridCell row="cXq-XL-Fsv" column="6Bq-zO-hhD" id="TML-2R-Zt3"/>
-                            <gridCell row="cXq-XL-Fsv" column="Vpg-JV-dcM" id="GcQ-lF-Rb2"/>
-                        </gridCells>
-                    </gridView>
+                    <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jNW-2N-eZp">
+                        <rect key="frame" x="20" y="292" width="71" height="48"/>
+                        <subviews>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YVj-Wu-8Ak">
+                                <rect key="frame" x="-3" y="24" width="78" height="25"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="YuU-pj-MZf" id="ffK-bo-fuW">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="BFK-Kp-Ss3">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="YuU-pj-MZf"/>
+                                            <menuItem title="Item 2" id="Bph-fz-FFh"/>
+                                            <menuItem title="Item 3" id="kqI-jV-V60"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Bdi-xY-D30">
+                                <rect key="frame" x="-7" y="-7" width="76" height="32"/>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9Zc-NT-zqi">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                        <visibilityPriorities>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                        </visibilityPriorities>
+                        <customSpacing>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                        </customSpacing>
+                    </stackView>
+                    <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="klR-ba-nZf">
+                        <rect key="frame" x="236" y="324" width="130" height="16"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dyz-C8-uwF">
+                                <rect key="frame" x="-2" y="-1" width="61" height="18"/>
+                                <buttonCell key="cell" type="radio" title="Radio" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="u4C-ej-5XB">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4fK-Nu-jhc">
+                                <rect key="frame" x="65" y="-1" width="65" height="18"/>
+                                <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="1x7-WJ-6Ym">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                        <visibilityPriorities>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                        </visibilityPriorities>
+                        <customSpacing>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                        </customSpacing>
+                    </stackView>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="243" y="-154"/>
+            <point key="canvasLocation" x="132" y="-120"/>
         </window>
     </objects>
 </document>

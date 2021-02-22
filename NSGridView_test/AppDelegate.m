@@ -42,6 +42,7 @@
     NSArray *a = [NSArray arrayWithObject:v];
     [self.gridView insertRowAtIndex:1 withViews:a];
     NSLog(@"NSGridView has %ld subviews.", [[self.gridView subviews] count]);
+    NSLog(@"NSGridViewSizeForContent = %f", NSGridViewSizeForContent);
 }
 
 
