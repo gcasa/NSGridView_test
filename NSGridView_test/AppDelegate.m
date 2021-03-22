@@ -42,9 +42,12 @@
     NSView *v = [[NSButton alloc] initWithFrame: f];
     NSArray *a = [NSArray arrayWithObject:v];
     [self.gridView insertRowAtIndex:1 withViews:a];
+    NSView *v1 = [[NSButton alloc] initWithFrame: f];
+    NSArray *a1 = [NSArray arrayWithObject:v1];
+    [self.gridView insertColumnAtIndex:1 withViews:a1];
     NSLog(@"NSGridView has %ld subviews.", [[self.gridView subviews] count]);
     NSLog(@"NSGridViewSizeForContent = %f", NSGridViewSizeForContent);
-    NSLog(@"Nunber of cells in row %ld = %ld",r, [[self.gridView rowAtIndex:r] numberOfCells]);
+    NSLog(@"Nunber of cells in row %ld = %ld",r, [[self.gridView columnAtIndex:r] numberOfCells]);
 }
 
 
