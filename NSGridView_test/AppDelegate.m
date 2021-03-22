@@ -39,10 +39,12 @@
     }*/
     NSInteger r = 1;
     NSRect f = NSMakeRect(0, 0,500, 400);
-    NSView *v = [[NSButton alloc] initWithFrame: f];
+    NSButton *v = [[NSButton alloc] initWithFrame: f];
+    [v setTitle: @"Button 1"];
     NSArray *a = [NSArray arrayWithObject:v];
     [self.gridView insertRowAtIndex:1 withViews:a];
-    NSView *v1 = [[NSButton alloc] initWithFrame: f];
+    NSButton *v1 = [[NSButton alloc] initWithFrame: f];
+    [v1 setTitle: @"Button 2"];
     NSArray *a1 = [NSArray arrayWithObject:v1];
     [self.gridView insertColumnAtIndex:1 withViews:a1];
     NSLog(@"NSGridView has %ld subviews.", [[self.gridView subviews] count]);
