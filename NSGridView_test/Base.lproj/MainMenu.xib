@@ -17,6 +17,7 @@
             <connections>
                 <outlet property="gridView" destination="Tgw-OT-GC0" id="yZv-r9-Yx2"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+                <outlet property="window1" destination="vP7-wj-hqP" id="rrs-w5-h33"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -833,6 +834,17 @@
                 </subviews>
             </view>
             <point key="canvasLocation" x="243" y="-154"/>
+        </window>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="" animationBehavior="default" id="vP7-wj-hqP">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="213" y="226" width="480" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2048" height="1127"/>
+            <view key="contentView" id="5mR-hm-udB">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+            <point key="canvasLocation" x="133" y="410"/>
         </window>
     </objects>
 </document>
