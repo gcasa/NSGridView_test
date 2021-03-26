@@ -33,6 +33,7 @@
     NSLog(@"NSGridView has %ld subviews.", [[self.gridView subviews] count]);
     NSLog(@"NSGridViewSizeForContent = %f", NSGridViewSizeForContent);
     NSLog(@"Nunber of cells in row %ld = %ld",r, [[self.gridView columnAtIndex:r] numberOfCells]);
+    NSLog(@"Subviews = %@", [self.gridView subviews]);
     
     
     NSArray *views = @[@[[[NSButton alloc] init],[[NSColorWell alloc] init]],@[[[NSButton alloc] init],[[NSColorWell alloc] init]]];
